@@ -23,7 +23,7 @@ export default function UploadBox({
         Upload Image
       </label>
 
-      <label className="flex min-h-[220px] cursor-pointer items-center justify-center rounded-2xl border border-dashed border-white/20 bg-white/5 p-6 text-center transition hover:border-white/30">
+      <label className="flex min-h-55 cursor-pointer items-center justify-center rounded-2xl border border-dashed border-white/20 bg-white/5 p-6 text-center transition hover:border-white/30">
         <input
           type="file"
           accept="image/*"
@@ -32,7 +32,7 @@ export default function UploadBox({
         />
 
         {previewUrl ? (
-          <div className="relative h-[220px] w-full overflow-hidden rounded-xl">
+          <div className="relative h-55 w-full overflow-hidden rounded-xl">
             <Image
               src={previewUrl}
               alt="Uploaded preview"
